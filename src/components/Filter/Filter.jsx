@@ -1,8 +1,7 @@
-import { useDispatch } from "react-redux";
-import { filterContact } from "redux/filtersSlice";
+import { useDispatch } from 'react-redux';
+import { filterContact } from 'redux/filtersSlice';
 
-import css from "./Filter.module.css";
-
+import css from './Filter.module.css';
 
 export const Filter = () => {
   const dispatch = useDispatch();
@@ -12,8 +11,7 @@ export const Filter = () => {
   return (
     <>
       <h3>Find contact by name</h3>
-           <input className={css.formInput} onChange={handleInputChange} />
+      <input className={css.formInput} onChange={handleInputChange} />
     </>
   );
 };
-
